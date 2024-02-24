@@ -1,0 +1,451 @@
+:root{
+
+    /* Colours */
+
+    /* ### Primary */
+
+--Pink: hsl(322, 100%, 66%);
+
+/* ### Neutral */
+
+--VeryPaleCyan: hsl(193, 100%, 96%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--GrayishBlue: hsl(208, 11%, 55%);
+}
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+/* FONTS FOR PROJECT
+
+  font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700 */
+
+body{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+nav button{
+    background-color: white;
+    border: none;
+    width: 6rem;
+    height:1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.197);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+nav button:hover{
+    transform: scale(1.03);
+}
+
+.logo, .logo2{
+    width: 175px;
+}
+
+.mockup{
+    width: 100%;
+    transition: all 0.35s ease;
+}
+
+.mockup:hover{
+transform: scale(1.02) rotate(-3deg);    
+}
+
+header{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-position: 100%;
+    background-color: var(--VeryPaleCyan);
+    background-position: top top;
+    background-repeat: no-repeat;
+ }
+
+.headercontainer{
+    width:95%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.intro h1{
+    max-width: 20rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.intro p{
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+    max-width: 26rem;
+}
+
+.cta{
+    border: none;
+    background-color: var(--Pink);
+    width: 11rem;
+    color: white;
+    height: 2.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.cta:hover, .cta2:hover{
+    background-color: hsla(322, 100%, 66%, 0.747);
+    transform: scale(1.03);
+    }
+
+.growtogether{
+    width:90%;
+    max-width: 1050px;
+    margin: 8rem auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem 3rem 5rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.169);
+    transition: all .35s ease;
+}
+
+.growtogether figure, .youruser figure {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.growtogether img, .flowconvo img, .youruser img{
+    width: 85%;
+    transition: all .35s ease;
+   
+
+}
+
+.growtogether h2, .flowconvo h2, .youruser h2{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+   
+}
+
+.growtogether p, .flowconvo p, .youruser p{
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 27rem;
+}
+
+.flowconvo p{
+    text-align: left;
+    max-width: 29rem;
+}
+
+.text{
+    display: grid;
+    justify-content: end;
+}
+
+.flowconvo, .youruser{
+    width:90%;
+    max-width: 1050px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem 3rem 5rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.169);
+    transition: all .35s ease;
+}
+
+.flowconvo figure{
+    justify-content: start;
+}
+
+.readytobuild{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.3rem;
+    margin: 7rem auto 0;
+    max-width: 360px;
+    width:90%;
+    text-align: center;
+    max-width: 30rem;
+    min-height: 10rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.169);
+    border-radius: 5px;
+    position: relative;
+    top: 3rem;
+    transition: all .35s ease;
+}
+
+.readytobuild h2{
+    font-size: 1.3rem;
+   
+}
+ .cta2{
+    border: none;
+    background-color: var(--Pink);
+    width: 14rem;
+    color: white;
+    height: 2.5rem;
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .3s ease;
+ }
+
+ .lowerinfo{
+    background-color: var(--VeryDarkCyan);
+    font-size: 0.8rem;
+    padding: 8rem  0 6rem 0;  
+    transition: all .35s ease;
+ }
+
+ .wrapperlowerinfo{
+    display: grid;
+    row-gap: 1.5rem;
+    width:90%;
+    max-width: 1050px;
+    margin: 0 auto;
+    transition: all .35s ease;
+ }
+
+ .huddleinfo1{
+    color:white;
+    width:100%;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:0 auto;
+ }
+
+ .lowernav{
+    display: flex;
+    justify-content: space-between;
+  
+ }
+
+ .lowernav ul{
+ list-style: none;
+ }
+
+ .lowernav li{
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+ }
+
+ .lowernav li:hover{
+    text-decoration: underline;
+ }
+
+ .socials{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+ }
+
+ .location{
+    display: flex;
+    align-items: start;
+    column-gap: 10px;
+ }
+
+ .location p{
+max-width: 15rem;
+ }
+ .phone{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+ }
+
+ .email{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    align-items: flex-start;
+ }
+
+ .icons{
+    display: flex;
+    align-items: center;
+ }
+
+ .facebook, .instagram, .twitter{
+    border: 1px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.7rem;
+    cursor: pointer;
+ }
+
+ .fa-brands{
+    font-size: 0.8rem;
+ }
+
+ .fa-brands:hover{
+    color: var(--Pink);
+ }
+
+ .facebook:hover, .instagram:hover, .twitter:hover
+{
+    border-color: var(--Pink);
+}
+ .huddleinfo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+ }
+
+ .huddleinfo img{
+    width: 1rem;
+ }
+
+ .growtogether img:hover, .youruser img:hover, .flowconvo img:hover{
+    transform: scale(1.03) rotate(3deg);
+ }
+
+ .huddleinfo1{
+    min-height:10rem;
+ }
+
+ @media (max-width: 950px){
+    .intro{
+       grid-template-columns: 1fr; 
+       grid-template-rows: auto;
+       text-align: center;
+       margin-top: 3rem;
+    }
+
+   .buildcommunity{
+    display: grid;
+    justify-content: center;
+   }
+
+.buildcommunity h1, .buildcommunity button{
+    justify-self: center;
+}
+
+.cta{
+    margin: 2.5rem 0;
+}
+
+
+.growtogether{
+    margin: 3rem auto;
+}
+
+.text{
+    justify-content: center;
+}
+
+.growtogether, .flowconvo, .youruser{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    padding:3rem 1rem;
+    text-align: center;
+    /* transition: all .35s ease; */
+}
+
+.flowconvo p{
+    text-align: center;
+}
+.growtogether figure, .youruser figure{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2 ;
+    display: grid;
+}
+
+.growtogether img, .youruser img{
+justify-self: center;
+}
+
+.huddleinfo1{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.lowernav{
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.socials{
+    align-items: center;
+    margin: 3rem 0 0 0;
+}
+.copyright{
+    margin-top: 1rem;
+}
+
+}
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
