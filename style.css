@@ -82,6 +82,7 @@ header{
     background-color: var(--VeryPaleCyan);
     background-position: top top;
     background-repeat: no-repeat;
+    background-size: 100%;
  }
 
 .headercontainer{
@@ -418,6 +419,14 @@ justify-self: center;
 }
 .copyright{
     margin-top: 1rem;
+}
+
+header{
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-position: top top;
+    background-size: 100%;
+
+
 }
 
 }
